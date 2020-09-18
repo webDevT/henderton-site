@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+  <g id="Сгруппировать_449" data-name="Сгруппировать 449" transform="translate(-1398 -2262)">
+    <g id="arrow-left" transform="translate(1420 2281.366) rotate(180)">
+      <path id="arrow-left-2" data-name="arrow-left" d="M18.328,10.177v1.646H7.04l2.853,2.669L8.649,15.657,3.672,11,8.649,6.343,9.894,7.507,7.04,10.177Z" transform="translate(-3.672 -6.343)" fill="#d72126"/>
+    </g>
+    <g id="Эллипс_1" data-name="Эллипс 1" transform="translate(1398 2262)" fill="none" stroke="#d72126" stroke-width="2">
+      <circle cx="15" cy="15" r="15" stroke="none"/>
+      <circle cx="15" cy="15" r="14" fill="none"/>
+    </g>
+  </g>
+</svg>

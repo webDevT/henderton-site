@@ -1,0 +1,726 @@
+@import "vars"
+@import "fonts"
+
+//start global style
+body 
+	font-family: $cabin
+	font-weight: 400
+	color: $dark-grey
+.container-fluid 
+	max-width: 1164px
+ul 
+	padding-left: 0 
+	margin-bottom: 0
+	list-style: none
+a,
+a:hover 
+	text-decoration: none
+.top-padding
+	padding-top: 89px
+.top-section__text
+	font-size: 22px 
+	font-weight: 400 
+	font-family: $cabin
+	line-height: 1.4
+
+h1 
+	font-size: 64px 
+	font-weight: 300 
+	font-family: $graph-light
+	color: $red
+h2 
+	font-size: 34px
+	font-family: $graph-light
+.white-color
+	color: #fff
+.red-color 
+	color: $red
+//end global style
+
+//start animate style
+.animated
+	animation-duration: 1s
+	animation-fill-mode: both
+@keyframes fadeIn
+	from
+		opacity: 0
+	to
+		opacity: 1
+.fadeIn
+	animation-name: fadeIn
+
+
+
+.line 
+	width: 122px 
+	height: 3px 
+	background: $beige
+//end animate style
+
+//start header style
+.header 
+	background: rgba(#E5E5E5, .95)
+	position: fixed 
+	top: 0 
+	left: 0
+	width: 100%
+	height: 89px
+	transition: all .5s
+	z-index: 999
+	.container-fluid 
+		height: 100% 
+		display: flex 
+		justify-content: space-between 
+		align-items: center
+.header.sticky 
+	height: 55px
+.header__menu
+	height: 100%
+	ul 
+		display: flex
+		align-items: center
+		height: 100%
+		li 
+			margin-left: 66px
+			height: 100%
+			display: flex 
+			align-items: center
+.header__menu-link
+	font-size: 14px
+	font-family: $graph-medium
+	font-weight: 500
+	color: rgba(#282F3A, 0.6)
+	text-transform: uppercase
+	transition: all 0.5s
+	height: 100%
+	display: flex 
+	align-items: center
+	position: relative
+
+.header__menu-link:before 
+	content: ''
+	position: absolute
+	top: 0 
+	width: 0% 
+	left: -5%
+	background: $beige 
+	height: 4px
+	transition: all .5s
+
+.header__menu-link:hover,
+.header__menu-link.active  
+	color: rgba(#282F3A, 1)
+.header__menu-link:hover:before,
+.header__menu-link.active:before
+	width: 110%
+.header__menu-btn
+	display: none
+.header__menu .mobile-link
+	display: none
+//end header style
+
+//start main-screen style
+.main-screen
+	background: url('../img/bg-header.jpg')
+	background-size: cover
+	padding-top: 16vw
+	padding-bottom: 13vw
+	h1 
+		margin-bottom: 1.875vw
+	.top-section__text
+		max-width: 504px
+		margin-bottom: 2.292vw
+		color: $grey
+		font-size: 22px
+
+//end main screen style
+
+//start blue section
+.blue-section 
+	background: $blue
+	padding-top: 112px
+	max-height: 905px
+	.col-lg-6 
+		img 
+			max-width: 100%
+			position: relative 
+			z-index: 2
+.blue-section__content 
+	padding-left: 4.167vw
+	padding-top: 50px
+	h2 
+		margin-top: 30px
+		margin-bottom: 36px
+.blue-section__text 
+	color: #979CA2
+	font-family: $cabin 
+	font-size: 19px
+	margin-bottom: 37px
+.blue-section__text:last-child 
+	margin-bottom: 0
+//end blue section
+
+//start services style 
+.services
+	.container-fluid 
+		position: relative
+.services-content 
+	background: #E5E5E5
+	max-width: 821px
+	margin-left: 390px
+	padding-top: 58px 
+	padding-bottom: 67px
+	padding-left: 290px
+	padding-right: 172px
+	//position: absolute
+	//top: 0 
+	//right: 0
+.services__items 
+	padding-top: 50px
+.services__item
+	width: 100%
+	display: flex 
+	justify-content: space-between
+	align-items: center
+	font-size: 22px 
+	font-family: $cabin 
+	font-weight: 400
+	color: $dark-grey
+	padding-top: 20px 
+	padding-bottom: 20px
+	border-top: 1px solid #DBDBDB
+	border-bottom: 1px solid #DBDBDB
+	width: 358px
+
+.services__item-text,
+.services__item-img
+	transition: transform .3s cubic-bezier(.19,1,.22,1)
+
+.icon circle
+	stroke-dasharray: 100
+	stroke-dashoffset: 100
+	-webkit-transform-origin: center center
+	transform-origin: center center
+	-webkit-transform: rotate(-180deg)
+	transform: rotate(-180deg)
+	-webkit-transition: -webkit-transform 1.3s cubic-bezier(.19,1,.22,1)
+	transition: -webkit-transform 1.3s cubic-bezier(.19,1,.22,1)
+	transition: transform 1.3s cubic-bezier(.19,1,.22,1)
+	transition: transform 1.3s cubic-bezier(.19,1,.22,1),-webkit-transform 1.3s cubic-bezier(.19,1,.22,1)
+//end services style
+.services__item:hover
+	color: $red
+	.services__item-text
+		transform: translateX(3px)
+	.services__item-img
+		transform: translateX(-3px)
+.services__item:hover .icon circle
+	-webkit-animation: circleDash 1.3s cubic-bezier(.19,1,.22,1) forwards
+	animation: circleDash 1.3s cubic-bezier(.19,1,.22,1) forwards
+@keyframes circleDash
+	to
+		stroke-dashoffset: 0
+		transform: rotate(90deg)
+//start figures section
+.figures
+	padding-top: 10.208vw
+	padding-bottom: 6.823vw
+.figures-container 
+	max-width: 772px
+	margin: 0 auto
+	display: flex
+	flex-wrap: wrap
+.figures__item 
+	width: 50%
+	margin-bottom: 5.573vw
+.figures__item-content
+	display: flex
+	align-items: center
+	justify-content: flex-start
+	border-left: 2px solid $beige
+	padding-top: 2px 
+	padding-bottom: 2px
+	padding-left: 16px
+
+.figures__item-icon
+	width: 81px
+.figures__item-text
+	font-size: 22px 
+	font-family: $cabin
+	br 
+		display: none
+.figures__number,
+.fig
+	color: $red
+	font-size: 64px
+	font-family: $graph-light
+	font-weight: 300
+
+.figures__item:first-child
+	.figures__number
+		min-width: 80px
+		display: flex
+.figures__element
+	display: flex
+	padding-left: 97px
+.figures__item:nth-child(2)
+	.figures__number
+		min-width: 115px
+.figures__item:nth-child(3)
+	.figures__number
+		min-width: 80px
+		display: flex
+.figures__item:nth-child(4)
+	.figures__number
+		min-width: 165px
+		display: flex
+
+//start reviews section
+.reviews
+	background: $beige
+	padding: 5vw 0
+	color: #fff
+	position: relative
+	overflow: hidden
+	.container-fluid 
+		display: flex
+.reviews--about
+	padding-top: 10vw
+.reviews__item
+	width: 50%
+.reviews__text
+	padding-right: 8vw
+	font-size: 15px 
+	font-family: $cabin
+	font-style: italic
+	line-height: 28px
+.reviews__footer
+	display: flex 
+	align-items: center
+	margin-top: 39px
+.author__info
+	padding-left: 25px
+.author__name
+	font-size: 22px 
+	font-family: $graph-medium 
+	font-weight: 500
+.author__position
+	font-size: 17px 
+	font-family: $cabin 
+	font-style: italic
+.reviews__img
+	position: absolute
+	right: 0
+	top: 0
+	width: 50%
+	img 
+		min-width: 100%
+		min-height: 100%
+
+//end reviews section 
+
+//start contact section 
+.contact 
+	padding-top: 4.479vw
+	padding-bottom: 4.063vw
+	background: #E5E5E5
+	font-size: 14px
+	font-family: $graph-reg
+	font-weight: 400
+	color: $grey
+	line-height: 28px
+	a 
+		color: $grey
+	.contact__link
+		padding-top: 0
+		padding-bottom: 0
+		border-top: none 
+		border-bottom: none
+		width: 130px
+		color: $dark-grey
+.contact__adress
+	margin-top: 40px
+.contact__city
+	font-size: 22px
+	font-family: $graph-reg
+	font-weight: 400
+	margin-bottom: 37px
+.footer 
+	background: $grey
+	color: $light-grey
+	padding: 2.344vw 0
+	font-size: 17px 
+	font-family: $cabin
+	a 
+		color: $light-grey
+	.container-fluid 
+		display: flex 
+		justify-content: space-between
+.footer-links
+	span 
+		padding: 0 25px
+//end contact section
+
+.blue-section--about
+	max-height: 655px
+	margin-bottom: 5.313vw
+.about 
+	padding-top: 9vw
+	position: relative 
+	z-index: 9
+	.col-lg-6 
+		display: flex
+		flex-direction: column
+		justify-content: center
+.about-img
+	width: 100%
+	transform: translateY(10%)
+//start page header
+.page-header 
+	padding-top: 21.927vw
+	background: url('../img/about-bg.jpg')
+	background-size: cover
+	background-repeat: no-repeat
+	p 
+		color: $grey
+		font-size: 22px
+		margin-bottom: 35px
+		margin-top: 18px 
+
+.page-header__contant
+	width: 746px
+	max-width: 90%
+	padding: 50px 97px 66px 97px 
+	background: rgba(#E5E5E5, .95)
+.page-header--services
+	background: url('../img/services-bg.jpg')
+	background-size: cover
+	background-repeat: no-repeat
+.services-page 
+	padding-top: 6.719vw
+	padding-bottom: 8.073vw
+.tabs
+	width: 100%
+	border-bottom: 3px solid #E5E5E5
+	display: flex
+	justify-content: space-between
+	.tab 
+		margin: 0 40px
+		display: flex 
+		justify-content: center
+		width: 100%		
+		font-size: 24px 
+		font-family: $cabin 
+		white-space: nowrap
+		cursor: pointer
+		span 
+			padding-bottom: 28px
+			position: relative
+		span:before 
+			content: ''
+			bottom: 0 
+			height: 7px 
+			width: 0% 
+			background: $red
+			display: block
+			position: absolute
+			left: 50%
+			transition: all .5s
+			transform: translateX(-50%) translateY(5px)
+	.tab.active
+		color: $red
+		span:before 
+			width: 85%
+.tab-item
+	padding-top: 6.302vw
+	display: none
+	.tab-content-img
+		width: 100%
+		img 
+			width: 100%
+.tab-item:first-child 
+	display: block
+.tab-item__header
+	padding-left: 27px
+	border-left: 3px solid $beige
+.tab-item__num
+	font-size: 22px 
+	color: $grey
+.tab-item__title
+	color: $red
+	font-size: 38px
+	font-family: $graph-light 
+	font-weight: 300
+	line-height: 1
+	margin-top: 10px
+.tab-item__text
+
+	p 
+		margin-top: 30px
+		font-size: 18px
+		padding-right: 5vw
+		color: $grey
+		margin-bottom: 0
+.tab-content-img.tab-content-img--mobile
+	display: none
+//end page header
+.page-header--transaction
+	background: url('../img/transaction-bg.jpg')
+.transactions
+	padding-top: 7.396vw
+	padding-bottom: 9.583vw
+.transactions-list
+	display: flex 
+	flex-wrap: wrap
+	border-bottom: 1px solid #979CA2
+	border-right: 1px solid #979CA2
+.transaction__item
+	width: 376.67px
+	border: 1px solid #979CA2
+	height: 376.67px
+	border-bottom: none
+	border-right: none
+	display: flex 
+	justify-content: center 
+	align-items: center
+	cursor: pointer
+.transaction__item
+	position: relative
+.transaction__item-hover
+	position: absolute
+	top: 0 
+	left: 0
+	width: 100% 
+	height: 100%
+	background: $red
+	border: 1px solid $red
+	box-shadow: 6px 6px 9px rgba(#000, 0.1)
+	color: #fff
+	opacity: 0
+	transition: all 0.3s
+.transaction__item-hover-content
+	width: 100% 
+	height: 100% 
+	display: flex
+	flex-direction: column
+	justify-content: space-between
+	padding: 60px 10px
+	align-items: center
+.transaction__item-title
+	font-family: $graph-light 
+	font-size: 44px
+	text-align: center
+	line-height: 1
+.transaction__item-text
+	font-size: 18px 
+	font-family: $graph-medium 
+	font-weight: 500
+.transaction__item:hover .transaction__item-hover
+	opacity: 1 
+.transaction-active
+	position: fixed
+	width: 50.573vw 
+	height: 100%
+	overflow-y: auto
+	top: 0 
+	right: 0
+	z-index: 99999
+	transform: translateX(100%)
+	transition: all 0.5s
+	background: #fff
+	border-left: 1px solid $red	
+	padding-top: 3.672vw
+	padding-left: 4.271vw
+	cursor: auto
+	font-size: 0.938vw
+	.close-img
+		cursor: pointer
+		width: 1.140vw
+
+
+
+	
+.transaction-active.active 
+	transform: translateX(0%)
+.overlay
+	background: rgba(#F9F9FA, .78)
+	position: fixed 
+	width: 100% 
+	height: 100%
+	top: 0 
+	left: 0
+	z-index: 99998
+	display: none
+.overlay.active
+	display: block		
+.transaction-active__wrapper	
+	display: flex
+.transaction-active-col-first
+	width: 11.771vw
+.transaction-active-col-second
+	width: 22.500vw
+.transaction-active__header
+	padding-top: 2.604vw
+	margin-left: 11.771vw
+	width: 15.260vw
+	height: 8.698vw
+	border-bottom: 3px solid #E5E5E5
+	margin-bottom: 1.953vw
+	img 
+		max-width: 100%
+.grey-line
+	width: 15.260vw
+	height: 3px 
+	background: #E5E5E5
+	margin-top: 3vw
+	margin-bottom: 3vw
+.modal-title
+	color: $red
+	margin-bottom: 0.208vw
+.modal-item
+	margin-bottom: 1.458vw
+.modal__footer
+	display: flex
+	flex-direction: row
+	justify-content: flex-start
+	width: 30vw
+	a 
+		max-width: 33.3%
+	img 
+		max-width: 100%
+
+
+.contact--contact-page
+	padding-top: 0
+	padding-bottom: 0
+	font-size: 18px
+	.contact__city
+		margin-bottom: 28px
+	.contact__adress
+		margin-bottom: 30px 
+		margin-top: 0 
+	.mail-contact 
+		color: $red
+		font-family: $graph-reg 
+		font-weight: 400
+		font-size: 18px
+	img 
+		width: 100%
+		transform: translateY(-50%)
+	a 
+		display: block
+.contact-itm-content
+	transform: translateY(-20%)
+.contact-form-section
+	padding-top: 8.542vw
+	padding-bottom: 12.917vw
+
+.contact-form-header
+	display: flex 
+	align-items: center
+	flex-direction: column 
+	padding-bottom: 18px
+	.line 
+		margin-bottom: 20px
+form 
+	width: 651px 
+	max-width: 100%
+	margin: 0 auto
+.form-row
+	display: flex
+	margin-top: 27px
+input,
+textarea 
+	width: 100%
+	height: 46px 
+	border: 1px solid #697FA8
+	outline: none
+	padding-left: 20px
+textarea
+	height: 168px
+.form-item
+	width: 100%
+label 
+	display: block
+	font-size: 17px
+	margin-bottom: 16px
+	color: #697FA8
+	span 
+		color: $red
+.form-row--two
+	justify-content: space-between
+	.form-item
+		width: 48%
+.form-footer
+	display: flex 
+	justify-content: center
+	margin-top: 40px
+	button
+		height: 46px 
+		border: none 
+		background: $red 
+		color: #fff
+		width: 122px
+		font-size: 14px 
+		font-family: $graph-medium 
+		font-weight: 500
+
+.contact-page-header
+	padding-top: 12.917vw
+	padding-top: 248px
+	padding-bottom: 7.292vw
+	padding-bottom: 140px
+	background: #E5E5E5
+	h1 
+		min-width: 550px
+	p 
+		margin-top: 1.823vw
+		font-size: 22px
+.map
+	position: absolute
+	top: 8vw
+	right: 0 
+	svg 
+		width: 45vw
+.pin 
+	fill: transparent
+.city-circle:hover .pin
+	fill: $red
+.city-circle
+	cursor: pointer
+	position: relative
+.city-name
+	position: relative
+	display: none
+.city-circle:hover .city-name
+	display: block
+.text-header
+	padding-top: 14.115vw
+	padding-bottom: 5.052vw
+	background: #E5E5E5
+	text-align: center
+	.container-fluid
+		display: flex 
+		justify-content: center 
+		align-items: center 
+		flex-direction: column
+		h1 
+			margin-bottom: 2vw
+.privacy-content
+	max-width: 941px 
+	margin: 0 auto
+	padding-top: 5.156vw
+	padding-bottom: 7vw
+.privacy-item
+	margin-bottom: 2.344vw
+	p 
+		font-size: 19px
+.privacy-title
+	font-size: 28px 
+	color: $red
+	margin-bottom: 1.458vw
+@import "media"
+
+
+
+

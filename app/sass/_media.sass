@@ -1,0 +1,627 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+	/**/
+	.container-fluid 
+		max-width: 90vw
+	.services-content
+		padding-right: 80px
+		padding-left: 150px
+		max-width: 640px
+	.contact
+		font-size: 1.2vw
+	.tab-item__text p
+		padding-right: 0
+	.tabs .tab
+		font-size: 1.8vw
+	.transactions-list
+		width: auto
+		max-width: 909px
+		margin: 0 auto
+	.transaction__item
+		width: 302px
+		height: 302px
+		max-width: 33.3%
+	.transaction__item-title
+		font-size: 35px
+	.contact--contact-page
+		.mail-contact 
+			font-size: 1.2vw
+
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 991px)
+	/**/
+	h1 
+		font-size: 9.067vw
+		width: 79vw
+		br 
+			display: none
+	h2 
+		font-size: 6.933vw
+
+	.container-fluid 
+		width: 80.533vw
+		padding-left: 0 
+		padding-right: 0
+	.logo 
+		img 
+			width: 32.891vw
+	.header 
+		height: auto
+		padding-top: 3vw
+		padding-bottom: 3vw
+	.header__menu ul 
+		display: none
+	.header.sticky 
+		height: auto
+		padding-top: 2vw
+		padding-bottom: 2vw
+	.menu-btn__row
+		background: #484E58
+		width: 4.800vw
+		height: 0.533vw
+		margin-bottom: 0.8vw
+		transition: all .5s
+	.menu-btn__row:last-child 
+		margin-bottom: 0
+	.header__menu-btn
+		cursor: pointer
+		display: block
+	.header__menu-btn.active
+		.menu-btn__row:last-child 
+			display: none
+		.menu-btn__row:first-child 
+			transform: rotate(45deg)
+			margin-bottom: 0
+			position: relative 
+			top: 0.5vw
+		.menu-btn__row:nth-child(2) 
+			transform: rotate(-45deg)
+			margin-bottom: 0
+	.header.active 
+		background: rgba(#E5E5E5, 1)
+	.header.active.sticky
+		padding-top: 3vw
+		padding-bottom: 3vw
+	.header__menu
+		ul.active
+			display: flex
+			flex-direction: column
+			position: fixed
+			width: 100vw 
+			left: 0
+			top: 9vw
+			background: rgba(#E5E5E5, 1)
+			min-height: 100vh
+			z-index: 998
+			overflow-y: auto
+			padding-top: 20vw
+			li 
+				height: auto
+				margin-bottom: 5vw
+				margin-left: 0
+	.header__menu-link:hover:before,
+	.header__menu-link.active:before
+		display: none
+	.header__menu-link:hover,
+	.header__menu-link.active
+		color: $red
+	.header__menu-link
+		height: auto
+		margin-left: 0
+		font-size: 4.5vw
+		font-family: $graph-light 
+		font-weight: 300
+	.header__menu .mobile-link
+		display: block
+	.main-screen 
+		padding-bottom: 89.867vw
+		background-size: 100%
+		background: url('../img/mobile-bg.jpg')
+		background-size: 100%
+		background-repeat: no-repeat
+		background-position: bottom
+		padding-top: 38.667vw
+		background-color: rgba(#E5E5E5, 1)
+
+		.top-section__text
+			font-size: 4.8vw
+			width: 76vw
+			max-width: 76vw
+			margin-bottom: 9.333vw
+		h1 
+			margin-bottom: 8vw
+		.line 
+			margin-bottom: 13.333vw
+	.line 
+		width: 18.133vw
+		height: .8vw
+	.blue-section 
+		padding-top: 13.333vw
+		position: relative
+		padding-bottom: 120.267vw
+		
+		h2 
+			margin-top: 7.733vw
+			margin-bottom: 8.800vw
+		.col-lg-6 
+			padding-left: 0 
+			padding-right: 0
+		.col-lg-6:first-child
+			order: 2
+			max-height: 120.267vw
+			height: 120.267vw
+			overflow: hidden
+			position: absolute 
+			bottom: 0 
+			left: 0
+			display: flex 
+			align-items: center
+			img 
+				max-width: 100%
+				width: 100%
+
+				
+		.col-lg-6:last-child
+			order: 1
+	.blue-section--about 
+		.col-lg-6:first-child
+			order: 2
+			max-height: 80vw
+			height: 80vw
+			overflow: hidden
+			position: absolute 
+			bottom: 0 
+			left: 0
+			img 
+				max-width: 100%
+				width: 100%
+			//display: none
+	.blue-section__content
+		padding-top: 0 
+		padding-left: 0
+		padding-bottom: 15.200vw
+	.blue-section__text
+		font-size: 4.267vw
+		margin-bottom: 10.667vw
+	.services
+		.container-fluid 
+			max-width: 100% 
+			padding-left: 0 
+			padding-right: 0
+			width: 100%
+		h2 
+			margin-bottom: 0
+	.services-content
+		width: 100%
+		margin: 0
+		position: static
+		max-width: 100%
+		padding-left: 9.333vw
+		padding-right: 9.333vw
+		padding-top: 19.733vw
+		padding-bottom: 21.867vw
+	.blue-section
+		max-height: 10000px
+	.services__items
+		padding-top: 13.067vw
+	.services__item
+		font-size: 4.8vw
+		padding-top: 6.667vw 
+		padding-bottom: 6.667vw
+		width: 100%
+	.figures-container
+		max-width: 715px
+	.reviews
+		display: flex 
+		flex-direction: column
+		padding-bottom: 0
+		padding-top: 20.800vw
+	.reviews__img
+		position: static
+		width: 100%
+		img 
+			width: 100%
+	.reviews__text
+		padding-right: 0
+	.reviews__item
+		width: 100%
+		padding-bottom: 21.067vw
+	.reviews__text
+		font-size: 4.267vw
+		line-height: 7.467vw
+	.reviews__footer
+		margin-top: 5.067vw
+	.rewiews__icon
+		img 
+			width: 17.725vw
+	.author__info
+		padding-left: 5.467vw
+	.author__name
+		font-size: 4.800vw
+	.author__position
+		font-size: 3.733vw
+	.contact
+		padding-top: 14.933vw
+		padding-bottom: 14.933vw
+		.col-lg-3
+			display: flex
+			justify-content: center
+			.contact__link
+				width: 32vw
+				font-size: 5.867vw
+		.col-lg-9 
+			display: none
+	.reviews
+		.container-fluid 
+			flex-direction: column
+		.reviews__item--first
+			padding-bottom: 0
+	.about-img
+		transform: translateY(0)
+	.blue-section--about
+		margin-bottom: 0
+	.about 
+		padding-top: 24vw
+		padding-bottom: 107.200vw
+	.about-img-wrapper
+		width: 100vw
+		max-width: 100%
+		position: absolute 
+		left: 0
+		bottom: 0
+		height: 105vw
+		overflow: hidden
+	.col-lg-6--text
+		padding-bottom: 16vw
+	.page-header 
+		background-color: #E5E5E5
+		background-image: url('../img/about-mobile-bg.jpg')
+		background-size: 100%
+		background-position: bottom
+		background-repeat: no-repeat
+		padding-bottom: 89.867vw
+		padding-top: 35.467vw
+		p 
+			font-size: 4.8vw
+			margin-bottom: 6.133vw
+			margin-top: 5.867vw
+	.page-header--services
+		background-image: url('../img/services-mobile-bg.jpg')
+		background-repeat: no-repeat
+		background-size: 100%
+		background-position: bottom
+	.page-header--transaction
+		background-image: url('../img/transaction-mobile.jpg')
+		background-repeat: no-repeat
+		background-size: 100%
+		background-position: bottom
+		padding-bottom: 80vw
+
+	.page-header__contant
+		width: auto
+		padding: 0
+		padding-bottom: 16.533vw
+		background: transparent
+	.blue-section--about
+		padding-bottom: 80vw
+	.tabs 
+		display: none
+	.tab-item
+		display: block !important
+		padding-top: 17.067vw
+	.tab-item .tab-content-img
+		height: 44.800vw
+		overflow: hidden
+		display: flex 
+		justify-content: center
+	.tab-item__num
+		font-size: 4.8vw
+	.tab-item__title
+		font-size: 6.933vw
+		margin-top: 1.5vw
+	.tab-item__header
+		padding-left: 5.067vw
+		margin-bottom: 9.600vw
+	.tab-item__text p
+		font-size: 4.267vw
+		margin-top: 9vw
+	.tab-item
+		.col-lg-6:last-child
+			display: none
+	.services-page
+		padding-bottom: 20vw
+	.transactions-list
+		width: 100%
+	.transaction__item
+		width: 50%
+		max-width: 50%
+		img 
+			max-width: 90%
+	.transaction-active
+		width: 100vw
+		padding-left: 9.6vw
+		padding-right: 9.6vw
+		padding-top: 10vw
+		font-size: 4.8vw
+	.close-wrapper
+		width: 100%
+		justify-content: flex-end
+		display: flex
+		.close-img
+			width: 5vw
+	.transaction-active__header
+		margin-left: 0
+	.transaction-active__header
+		width: 49.867vw
+		height: 23.200vw
+		margin-bottom: 9.6vw
+		margin-top: 8vw
+	.transaction-active__wrapper
+		flex-direction: column
+	.transaction-active-col-first
+		order: 2
+		width: 100%
+		padding-bottom: 10vw
+	.transaction-active-col-second 
+		order: 1 
+		width: 100%
+	.grey-line
+		width: 49.867vw
+		margin-top: 10vw 
+		margin-bottom: 10vw
+	.modal__footer
+		width: 100%
+		margin-bottom: 10vw
+		flex-wrap: wrap
+		display: flex
+		a 
+			width: 50%
+			max-width: 50%
+			img 
+				width: 100%
+	.contact--contact-page
+		font-size: 3.2vw
+		line-height: 1.5
+		img
+			transform: translateY(0)
+			margin-bottom: 5vw
+		.col-lg-3 
+			flex-direction: column
+			margin-bottom: 8vw
+		.contact-itm-content
+			transform: translateY(0)
+		.contact__city
+			font-size: 4.2vw
+			margin-bottom: 4vw
+	.contact--contact-page .mail-contact
+		font-size: 3.2vw
+	.contact--contact-page .contact__adress
+		margin-bottom: 3vw
+	.map
+		position: static
+		width: 100% 
+		display: flex 
+		justify-content: flex-end
+		padding-top: 5vw
+
+		svg
+			width: 95vw
+			height: 95vw
+	.contact-page-header
+		padding-top: 30vw
+		padding-bottom: 20vw
+		h1
+			min-width: 100%
+		p 
+			font-size: 4.2vw
+	.text-header
+		padding-top: 28vw
+		padding-bottom: 15vw
+	.privacy-title
+		font-size: 5.2vw
+	.privacy-item p
+		font-size: 4.2vw
+	.privacy-content
+		padding-top: 15vw
+		padding-bottom: 15vw
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	 
+
+
+
+
+
+
+
+
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	/**/
+	.figures__item
+		width: 100%
+		margin-left: 16.533vw
+	.figures__item-content
+		padding-left: 4.533vw
+	.figures__item-icon
+		width: 17.600vw	
+		img 
+			width: 11.200vw
+	.figures__element
+		padding-left: 23.133vw
+	.figures__number,
+	.fig
+		font-size: 11.733vw
+	.figures__item:first-child .figures__number
+		min-width: 16vw
+	.figures__item:nth-child(2) .figures__number
+		min-width: 22vw
+	.figures__item:nth-child(3) .figures__number
+		min-width: 15vw
+	.figures__item:nth-child(4) .figures__number
+		min-width: 31vw
+	.figures__item-text
+		font-size: 4.8vw
+		br 
+			display: block
+	.figures__item-content
+		padding-top: 0 
+		padding-bottom: 0
+	.figures__item
+		margin-bottom: 14.400vw
+	.figures
+		padding-top: 20.267vw
+		padding-bottom: 8vw
+	.footer 
+		font-size: 4.800vw
+		padding-top: 9.867vw
+		padding-bottom: 5.867vw
+		.container-fluid 
+			display: flex 
+			flex-direction: column
+			align-items: center
+		.footer-links 
+			flex-direction: column
+			display: flex
+			text-align: center
+			order: 1
+			a 
+				margin-bottom: 6.400vw
+			a:last-child 
+				margin-bottom: 0
+			span 
+				display: none
+		.footer__copy 
+			order: 2
+			padding-top: 8.533vw
+			text-align: center
+	.transaction__item
+		width: 80.533vw
+		max-width: 80.533vw
+		height: 80.533vw
+		img 
+			max-width: 70%
+	.transactions
+		padding-top: 19.467vw
+		padding-bottom: 19.467vw
+	.transaction__item-hover-content
+		padding: 15vw 5vw
+	.transaction__item-title
+		font-size: 9vw
+	.transaction__item-text
+		font-size: 4vw
+	.contact--contact-page
+		font-size: 4.2vw
+		line-height: 1.5
+		padding-bottom: 7vw
+		img
+			transform: translateY(0)
+			margin-bottom: 5vw
+		.col-lg-3 
+			flex-direction: column
+			margin-bottom: 8vw
+		.contact-itm-content
+			transform: translateY(0)
+		.contact__city
+			font-size: 6vw
+			margin-bottom: 4vw
+	.contact--contact-page .mail-contact
+		font-size: 4.2vw
+	.contact--contact-page .contact__adress
+		margin-bottom: 3vw
+	.form-row--two
+		flex-direction: column
+		.form-item 
+			width: 100%
+			margin-top: 5vw
+	.contact-form-header
+		padding-bottom: 0
+	.form-row
+		margin-top: 5vw
+		label 
+			margin-bottom: 1vw
+			font-size: 4.2vw
+	input 
+		height: 12vw
+	textarea 
+		height: 30vw
+	.form-footer
+		margin-top: 10vw
+
+
+
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+	/**/
+	.header__menu-link
+		font-size: 9.067vw
+	.header__menu
+		ul.active
+			padding-top: 40vw
+			li.active 
+				margin-bottom: 10.133vw
+
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	/**/
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/
+
+
+
+
+
