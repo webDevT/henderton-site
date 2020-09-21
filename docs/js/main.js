@@ -22,6 +22,22 @@ $('.header__menu-btn').click(function(){
         $('.header').toggleClass('active');
 
     })
+
+// $('.services__item2').click(function(){
+
+//     $.cookie('name', 'value');
+//         //$('#mergers-and-acquisitions').addClass('active');
+       
+
+//     })
+
+
+// var wHash = window.location.hash.split('#')[0];
+// if (wHash) {
+//     $('.tab-item').hide();
+//     $('#grow-equil').show();
+// }
+
 //-------end mobil menu------------
 
 //-------end sticky header--------
@@ -30,6 +46,41 @@ $(".tab").click(function() {
 	$(".tab").removeClass("active").eq($(this).index()).addClass("active");
  	$(".tab-item").hide().eq($(this).index()).fadeIn(1000)
 }).eq(0).addClass("active");
+
+
+
+
+ var wHash3 = window.location.hash.split('g')[1];
+if (wHash3) {
+   $('.tab-item').hide();
+    $('#grow').show();
+    $('.tab:first-child').removeClass('active');
+     $('.tab:first-child').addClass('active');
+}  
+
+ var wHash1 = window.location.hash.split('m')[1];
+if (wHash1) {
+   $('.tab-item').hide();
+    $('#mergers').show();
+$('.tab:first-child').removeClass('active');
+    $('.tab:nth-child(2)').addClass('active');
+}       
+  
+ var wHash2 = window.location.hash.split('t')[1];
+if (wHash2) {
+   $('.tab-item').hide();
+    $('#tra').show();
+    $('.tab:first-child').removeClass('active');
+     $('.tab:nth-child(3)').addClass('active');
+}   
+
+ var wHash4 = window.location.hash.split('i')[1];
+if (wHash4) {
+   $('.tab-item').hide();
+    $('#inves').show();
+    $('.tab:first-child').removeClass('active');
+     $('.tab:nth-child(4)').addClass('active');
+}  
 
 
 $('.transaction__item').click(function(){

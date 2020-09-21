@@ -24,12 +24,13 @@ a:hover
 	line-height: 1.4
 
 h1 
-	font-size: 64px 
+	font-size: 54px 
+	line-height: 1.2
 	font-weight: 300 
 	font-family: $graph-light
 	color: $red
 h2 
-	font-size: 34px
+	font-size: 30px
 	font-family: $graph-light
 .white-color
 	color: #fff
@@ -126,12 +127,12 @@ h2
 	padding-top: 16vw
 	padding-bottom: 13vw
 	h1 
-		margin-bottom: 1.875vw
+		margin-bottom: 1.5vw
 	.top-section__text
 		max-width: 504px
 		margin-bottom: 2.292vw
 		color: $grey
-		font-size: 22px
+		font-size: 18px
 
 //end main screen style
 
@@ -154,7 +155,7 @@ h2
 .blue-section__text 
 	color: #979CA2
 	font-family: $cabin 
-	font-size: 19px
+	font-size: 16px
 	margin-bottom: 37px
 .blue-section__text:last-child 
 	margin-bottom: 0
@@ -182,7 +183,7 @@ h2
 	display: flex 
 	justify-content: space-between
 	align-items: center
-	font-size: 22px 
+	font-size: 18px 
 	font-family: $cabin 
 	font-weight: 400
 	color: $dark-grey
@@ -292,7 +293,6 @@ h2
 	padding-right: 8vw
 	font-size: 15px 
 	font-family: $cabin
-	font-style: italic
 	line-height: 28px
 .reviews__footer
 	display: flex 
@@ -301,11 +301,11 @@ h2
 .author__info
 	padding-left: 25px
 .author__name
-	font-size: 22px 
+	font-size: 18px 
 	font-family: $graph-medium 
 	font-weight: 500
 .author__position
-	font-size: 17px 
+	font-size: 14px 
 	font-family: $cabin 
 	font-style: italic
 .reviews__img
@@ -324,7 +324,7 @@ h2
 	padding-top: 4.479vw
 	padding-bottom: 4.063vw
 	background: #E5E5E5
-	font-size: 14px
+	font-size: 12px
 	font-family: $graph-reg
 	font-weight: 400
 	color: $grey
@@ -341,15 +341,15 @@ h2
 .contact__adress
 	margin-top: 40px
 .contact__city
-	font-size: 22px
+	font-size: 18px
 	font-family: $graph-reg
 	font-weight: 400
 	margin-bottom: 37px
 .footer 
 	background: $grey
 	color: $light-grey
-	padding: 2.344vw 0
-	font-size: 17px 
+	padding: 2vw 0
+	font-size: 14px 
 	font-family: $cabin
 	a 
 		color: $light-grey
@@ -383,7 +383,7 @@ h2
 	background-repeat: no-repeat
 	p 
 		color: $grey
-		font-size: 22px
+		font-size: 18px
 		margin-bottom: 35px
 		margin-top: 18px 
 
@@ -435,9 +435,19 @@ h2
 	padding-top: 6.302vw
 	display: none
 	.tab-content-img
-		width: 100%
+		//height: 27.188vw
+		//width: 28.750vw
+		overflow: hidden
+		max-height: 100%
+		display: flex 
+		justify-content: center
+		align-items: flex-end
+		height: 100%
 		img 
-			width: 100%
+			width: 100%	
+			height: auto
+			overflow: hidden
+
 .tab-item:first-child 
 	display: block
 .tab-item__header
@@ -508,7 +518,7 @@ h2
 	align-items: center
 .transaction__item-title
 	font-family: $graph-light 
-	font-size: 44px
+	font-size: 40px
 	text-align: center
 	line-height: 1
 .transaction__item-text
@@ -529,8 +539,8 @@ h2
 	transition: all 0.5s
 	background: #fff
 	border-left: 1px solid $red	
-	padding-top: 3.672vw
-	padding-left: 4.271vw
+	padding-top: 2vw
+	padding-left: 4vw
 	cursor: auto
 	font-size: 0.938vw
 	.close-img
@@ -542,6 +552,9 @@ h2
 	
 .transaction-active.active 
 	transform: translateX(0%)
+	.grey-line
+		margin-top: 1.5vw 
+		margin-bottom: 1.5vw
 .overlay
 	background: rgba(#F9F9FA, .78)
 	position: fixed 
@@ -560,14 +573,15 @@ h2
 .transaction-active-col-second
 	width: 22.500vw
 .transaction-active__header
-	padding-top: 2.604vw
+	padding-top: 0
 	margin-left: 11.771vw
 	width: 15.260vw
-	height: 8.698vw
+	height: 4vw
 	border-bottom: 3px solid #E5E5E5
 	margin-bottom: 1.953vw
 	img 
 		max-width: 100%
+		max-height: 100%
 .grey-line
 	width: 15.260vw
 	height: 3px 
@@ -578,7 +592,7 @@ h2
 	color: $red
 	margin-bottom: 0.208vw
 .modal-item
-	margin-bottom: 1.458vw
+	margin-bottom: 1vw
 .modal__footer
 	display: flex
 	flex-direction: row
@@ -586,6 +600,9 @@ h2
 	width: 30vw
 	a 
 		max-width: 33.3%
+		display: flex 
+		align-items: center 
+		padding: 0 1vw
 	img 
 		max-width: 100%
 
@@ -617,7 +634,7 @@ h2
 
 .contact-form-header
 	display: flex 
-	align-items: center
+	align-items: flex-start
 	flex-direction: column 
 	padding-bottom: 18px
 	.line 
@@ -653,7 +670,7 @@ label
 		width: 48%
 .form-footer
 	display: flex 
-	justify-content: center
+	justify-content: flex-start
 	margin-top: 40px
 	button
 		height: 46px 
@@ -675,7 +692,7 @@ label
 		min-width: 550px
 	p 
 		margin-top: 1.823vw
-		font-size: 22px
+		font-size: 18px
 .map
 	position: absolute
 	top: 8vw
@@ -702,8 +719,9 @@ label
 	.container-fluid
 		display: flex 
 		justify-content: center 
-		align-items: center 
+		align-items: flex-start
 		flex-direction: column
+		max-width: 941px
 		h1 
 			margin-bottom: 2vw
 .privacy-content
@@ -719,6 +737,20 @@ label
 	font-size: 28px 
 	color: $red
 	margin-bottom: 1.458vw
+a.others
+	color: $grey
+	font-family: $graph-medium
+	font-size: 28px
+	font-weight: 500
+	width: 100% 
+	height: 100%
+	display: flex 
+	justify-content: center 
+	align-items: center
+.others:hover 
+	color: $grey
+.modal-text 
+	text-align: justify
 @import "media"
 
 
