@@ -639,7 +639,7 @@ h2
 	padding-bottom: 18px
 	.line 
 		margin-bottom: 20px
-form 
+.form 
 	width: 651px 
 	max-width: 100%
 	margin: 0 auto
@@ -672,7 +672,8 @@ label
 	display: flex 
 	justify-content: flex-start
 	margin-top: 40px
-	button
+	flex-direction: column
+	input[type="submit"]
 		height: 46px 
 		border: none 
 		background: $red 
@@ -681,6 +682,13 @@ label
 		font-size: 14px 
 		font-family: $graph-medium 
 		font-weight: 500
+		padding-left: 0 
+		padding-right: 0
+		display: flex 
+		align-items: center 
+		justify-content: center
+		display: block
+		cursor: pointer
 
 .contact-page-header
 	padding-top: 12.917vw
@@ -751,6 +759,16 @@ a.others
 	color: $grey
 .modal-text 
 	text-align: justify
+#erconts
+	display: inline-block
+	width: auto
+	margin-top: 1vw
+	font-family: $graph-medium
+	div 
+		color: $red		
+input.error, 
+textarea.error
+	border: 2px solid $red
 @import "media"
 
 
