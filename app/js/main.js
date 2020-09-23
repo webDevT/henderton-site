@@ -115,12 +115,15 @@ $(document).ready(function () {
             $('.figures__number').css('opacity', '1');
             $('.figures__number').spincrement({
                 thousandSeparator: "",
-                duration: 1200
+                duration: 3000
             });
 
             show = false;
         }
     });
+
+
+
 
 });
 
